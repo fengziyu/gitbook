@@ -1,0 +1,32 @@
+--
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: pubilsh
+    image: plugins/docker
+    volumes:
+      - name: docker.sock
+        path: /var/run/docker.sock
+    settings:
+      repo: hub.fengziyu.top/gitbook
+      tags: 0.0.1
+    
+  - name: deployment
+    image: appleboy/drone-ssh
+    settings:
+      host:
+        from_secret: host
+      username:
+        from_secret: username
+      password:
+        from_secret: password   
+      script:
+        - cd /data/deploy
+        - sh gitbook.sh
+            
+volumes:
+  - name: docker.sock
+    host:
+      path: /var/run/docker.sock

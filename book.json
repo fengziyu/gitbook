@@ -1,0 +1,31 @@
+{
+  "title": "疯子窳",
+  "author": "疯子窳",
+  "description": "select * from learn",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "structure": {
+      "readme": "README.md"
+  },
+  "plugins": [
+      "-sharing",
+      "-lunr",
+      "-search",
+      "search-pro",
+      "splitter",
+      "chapter-fold",
+      "anchor-navigation-ex",
+      "back-to-top-button",
+      "edit-link",
+      "popup"
+  ],
+  "pluginsConfig": {
+      "anchor-navigation-ex": {
+          "showLevel": false
+      },
+      "edit-link": {
+          "base": "//github.com/fengziyu/gitbook/edit/master",
+          "label": "编辑此页面"
+      }
+  }
+}

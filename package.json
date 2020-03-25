@@ -1,0 +1,24 @@
+{
+  "name": "gitbook",
+  "version": "1.0.0",
+  "repository": "git@github.com:fengziyu/gitbook.git",
+  "author": "刘洋 <fengziyu528@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gitbook serve",
+    "buiild": "gitbook build"
+  },
+  "dependencies": {
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-page-treeview": "^3.0.1",
+    "gitbook-plugin-popup": "^0.0.1",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-splitter": "^0.0.8"
+  }
+}
