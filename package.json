@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "gitbook serve",
-    "buiild": "gitbook build"
+    "build": "gitbook build"
   },
   "dependencies": {
     "gitbook-cli": "^2.3.2",
