@@ -17,7 +17,8 @@
       "anchor-navigation-ex",
       "back-to-top-button",
       "edit-link",
-      "popup"
+      "popup",
+      "gtalk"
   ],
   "pluginsConfig": {
       "anchor-navigation-ex": {
@@ -26,6 +27,13 @@
       "edit-link": {
           "base": "//github.com/fengziyu/gitbook/edit/master",
           "label": "编辑此页面"
+      },
+      "gtalk": {
+        "clientID": "a071927e3d0d59db9cde",
+        "clientSecret": "93f2b034401127594750d057ca950be6cc033465",
+        "repo": "gitbook-gitalk",
+        "owner": "fengziyu",
+        "admin": ["fengziyu"]
       }
   }
 }
