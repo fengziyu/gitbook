@@ -31,7 +31,7 @@
       "gtalk": {
         "clientID": "a071927e3d0d59db9cde",
         "clientSecret": "93f2b034401127594750d057ca950be6cc033465",
-        "repo": "gitbook-gitalk",
+        "repo": "gitbook",
         "owner": "fengziyu",
         "admin": ["fengziyu"]
       }
