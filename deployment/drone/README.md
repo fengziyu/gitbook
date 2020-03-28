@@ -114,7 +114,9 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 #### drone
 ![openDrone](\assets\openDrone.gif)
 
-### 
+## Step 3: 编译部署项目
+
+### 编译项目
 
 #### 激活服务
 ![activateDrone](\assets\activateDrone.gif)
@@ -150,3 +152,10 @@ steps:
 直接推送到仓库项目就会自动编译了。
 
 ![initDrone](\assets\initDrone.gif)
+
+### 部署
+
+编译完之后项目有如下方式可以部署
+- 直接部署编译后的静态资源。
+- 转成docker image
+
