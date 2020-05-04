@@ -4,8 +4,21 @@ type: docker
 name: default
 
 steps:
+  - name: build
+    image: node:13.10.1
+    volumes:
+      - name: cache
+        path: /.yarn-cache
+    commands:
+      - node -v
+      - npm -v
+      - yarn --version
+      - yarn config set cache-folder /.yarn-cache
+      - yarn install
+      - yarn build
+
   - name: pubilsh
-    image: plugins/docker
+    image: plugins/docker:18.09
     volumes:
       - name: docker.sock
         path: /var/run/docker.sock
@@ -14,7 +27,7 @@ steps:
       tags: 0.0.1
     
   - name: deployment
-    image: appleboy/drone-ssh
+    image: appleboy/drone-ssh:1.5.7
     settings:
       host:
         from_secret: host
