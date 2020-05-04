@@ -17,6 +17,7 @@
     "gitbook-plugin-expandable-chapters": "^0.2.0",
     "gitbook-plugin-expandable-chapters-small": "^0.1.7",
     "gitbook-plugin-gtalk": "^0.0.7",
+    "gitbook-plugin-mygitalk": "^0.2.6",
     "gitbook-plugin-page-treeview": "^3.0.1",
     "gitbook-plugin-popup": "^0.0.1",
     "gitbook-plugin-search-pro": "^2.0.2",
